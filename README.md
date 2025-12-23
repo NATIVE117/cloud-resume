@@ -32,7 +32,7 @@ Steps (high level):
 - Reading logs and troubleshooting failed deployments
 - Writing clear technical documentation
 
-## STatus
+## Status
 In progress - actively building
 
 ## Next Steps

@@ -12,18 +12,19 @@ Planned components:
 - Static website hosting (cloud object storage)
 - CDN for global delivery
 - DNS + HTTPS
-- CI/CD: GitHub Actions
+- CI/CD: GitHub Actions (automated deploy to Azure Storage Static Website)
 - Frontend: HTML / CSS
 - Version Control: Git + GitHub
 
 ## Deployment 
-This project is deployeed automatically via CI/CD.
+This project is deployeed automatically via CI/CD using GitHub Actions.
 
 Steps (high level):
-1. Code pushed to 'main'
-2. CI/CD pipeline runs
-3. Infrastructure is validated
-4. Website is deployed
+1. Code pushed to 'main' branch
+2. GitHub Actions workflow is triggered
+3. The pipeline authenticates to Azure using a Service Principal (RBAC)
+4. Static site files are uploaded to the Azure Storage '$web' container
+5. The website is updated without manual intervention
 
 ## What I'm Practicing
 - Cloud fundamentals (networking, storage, IAM)
@@ -36,8 +37,8 @@ Steps (high level):
 In progress - actively building
 
 ## Next Steps
-- Deploy initial static site
-- Add CI/CD pipeline
+- ✅ Deploy initial static site
+- ✅ Add CI/CD pipeline
 - Implemnt IaC
 - Add monitoring
 - Document lessons learned

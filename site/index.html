@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name | Cloud Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Your Name</h1>
+    <p>Entry Cloud Engineer • Azure • Linux • Automation</p>
+
+    <h2>About</h2>
+    <p>
+      I build and operate cloud workloads using Infrastructure as Code and CI/CD.
+      This resume site is deployed on Azure Storage Static Website and automated with GitHub Actions.
+    </p>
+
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Cloud Resume Project (Azure)</strong> — Static site + CI/CD + (later) CDN + custom domain</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Azure: Storage, IAM/RBAC (next), Monitoring (next)</li>
+      <li>Linux: CLI fundamentals, permissions, services</li>
+      <li>CI/CD: GitHub Actions</li>
+    </ul>
+
+    <footer>
+      <p>© <span id="y"></span> Your Name</p>
+    </footer>
+  </main>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
